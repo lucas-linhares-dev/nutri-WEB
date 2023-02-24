@@ -1,34 +1,21 @@
+import Card from "@mui/material/Card"
+import CardContent from "@mui/material/CardContent"
+import Typography from "@mui/material/Typography"
+
 
 
 
 export const PaginaInicial = () => {
 
-    const cardStyle = {
-        width: "50%",
-        margin: "auto",
-        marginTop: "5rem"
-    }
-
-    const logoTitleStyle = {
-        color: "green",
-        fontSize: '30px'
-    }
-
-
-    const titleStyle = {
-        textAlign: 'center' as 'center'
-    }
-
 
     return(
-        <div>
-            <div className="card" style={cardStyle}>
-                <div className="card-header">
-                    <h3 className="card-title" style={titleStyle}>Seja bem vindo ao projeto <span style={logoTitleStyle}>Nutri+</span></h3>
-                </div>
-            </div>
 
-
-        </div>
+        <Card sx={{width: '60%', margin: '5% auto auto auto', backgroundColor: 'black', borderRadius: '20px'}}>
+            <CardContent>
+                <Typography align='center' variant="h3" color='white'>
+                    Seja bem vindo ao projeto <Typography variant="h2" color='green'>NUTRI+</Typography>
+                </Typography>
+            </CardContent>
+        </Card>
     )
 }
